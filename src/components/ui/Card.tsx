@@ -25,6 +25,7 @@ const Card: FC<CardProps> = ({ title, snippetCount, exp, src, progress }) => {
                     <div
                         className="h-full bg-btnHighlight"
                         style={{
+                            borderRadius: '0 0 0 8px',
                             width: `${progress}%`,
                         }}
                     />
