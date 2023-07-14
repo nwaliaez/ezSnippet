@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import Card from '../ui/Card';
-import { frontendCard } from '../utils/Data';
 
 interface CardSectionProps {
     title: string;
@@ -10,6 +9,7 @@ interface CardSectionProps {
         src: string;
         exp: string;
         snippetCount: number;
+        progress: number;
     }[];
 }
 
@@ -25,6 +25,7 @@ const CardSection: FC<CardSectionProps> = ({ title, data }) => {
                         src={card.src}
                         exp={card.exp}
                         snippetCount={card.snippetCount}
+                        progress={card.progress}
                     />
                 ))}
             </div>

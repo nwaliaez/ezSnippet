@@ -8,9 +8,10 @@ interface CardProps {
     snippetCount: number;
     exp: string;
     src: string;
+    progress: number;
 }
 
-const Card: FC<CardProps> = ({ title, snippetCount, exp, src }) => {
+const Card: FC<CardProps> = ({ title, snippetCount, exp, src, progress }) => {
     return (
         <div className="flex flex-col gap-3">
             <div className="relative aspect-video">
@@ -20,6 +21,14 @@ const Card: FC<CardProps> = ({ title, snippetCount, exp, src }) => {
                     fill
                     className="object-cover rounded-lg"
                 />
+                <div className="progress-bar">
+                    <div
+                        className="h-full bg-btnHighlight"
+                        style={{
+                            width: `${progress}%`,
+                        }}
+                    />
+                </div>
             </div>
 
             <div className="grid gap-2 px-2">
