@@ -1,10 +1,8 @@
-'use client';
-import { FC, RefObject, useEffect, useRef, useState } from 'react';
+import { FC } from 'react';
 import ProfilePic from './cover/ProfilePic';
 import ProfileName from './cover/ProfileName';
-import Menu from './cover/Menu';
 import Button from './ui/Button';
-import { UserPlus2 } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 import Link from 'next/link';
 
 interface CoverProps {}
@@ -21,7 +19,7 @@ const Cover: FC<CoverProps> = ({}) => {
                         <ProfileName />
                         <Link href="https://instagram.com/ezSnippet">
                             <Button variant="primary" sizes={'small'}>
-                                <UserPlus2 /> Follow
+                                <Instagram /> Follow me on Instagram
                             </Button>
                         </Link>
                     </div>

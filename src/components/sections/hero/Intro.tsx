@@ -16,7 +16,7 @@ const Intro: FC<IntroProps> = ({}) => {
             <div className="flex flex-col justify-between flex-1">
                 <div className="flex flex-col gap-4">
                     <div className="text-2xl text-highlight font-semibold">
-                        This is my Intro Video
+                        Learning made EZ - An introduction
                     </div>
                     <div className="flex gap-4">
                         <List variant="info" sizes="xs">
@@ -32,11 +32,14 @@ const Intro: FC<IntroProps> = ({}) => {
                     </div>
                 </div>
                 <div className="text-secondary text-sm max-w-[500px]">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Voluptate ipsa eligendi esse? Excepturi aspernatur,
-                    doloribus reprehenderit odio inventore aut repudiandae
-                    obcaecati magni possimus accusantium et perferendis placeat
-                    illum, modi natus!
+                    Join me, Neeraj Walia, aka EZ, on an exciting coding
+                    journey! Together, we&apos;ll delve into a world of
+                    knowledge, discover innovative ideas, embrace quick tips,
+                    master clever tricks, conquer coding challenges, implement
+                    best practices, and even tackle interview questions. Hit
+                    that follow button on @ezsnippet if you&apos;ve not already
+                    done so and let&apos;s build something extraordinary, one
+                    line of code at a time!
                 </div>
             </div>
         </div>

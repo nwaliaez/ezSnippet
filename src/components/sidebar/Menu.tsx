@@ -4,6 +4,7 @@ import {
     Flame,
     Github,
     Home,
+    Image as ImageIcon,
     Instagram,
     Layers,
     Share2,
@@ -56,14 +57,26 @@ const Menu: FC<MenuProps> = ({}) => {
 
             {/* List 3 */}
             <div className="mt-5">Projects</div>
-            <List link="/home" effect="slideUp">
+            <List link="https://github.com/nwaliaez/eCommerce" effect="slideUp">
                 <ShoppingCart /> eCommerce
             </List>
-            <List link="/home" effect="slideUp">
+            <List
+                link="https://github.com/nwaliaez/HardhatLottery"
+                effect="slideUp"
+            >
                 <Ticket /> Lottery
             </List>
-            <List link="/home" effect="slideUp">
+            <List
+                link="https://github.com/nwaliaez/filetransfer-webrtc"
+                effect="slideUp"
+            >
                 <Share2 /> File Sharing
+            </List>
+            <List
+                link="https://github.com/nwaliaez/dalleClone"
+                effect="slideUp"
+            >
+                <ImageIcon /> Dalle Clone
             </List>
         </div>
     );

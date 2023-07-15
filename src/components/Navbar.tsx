@@ -1,4 +1,4 @@
-import { Download, Grip } from 'lucide-react';
+import { Grip, User } from 'lucide-react';
 import { FC } from 'react';
 import Button from './ui/Button';
 import SearchBar from './navbar/SearchBar';
@@ -11,7 +11,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
             <SearchBar />
             <div className="flex items-center gap-5">
                 <Button>
-                    Download CV <Download size={18} />
+                    Contact Me <User size={18} />
                 </Button>
                 <Grip className="cursor-pointer hover:text-primary transition-colors" />
             </div>
