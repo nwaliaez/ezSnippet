@@ -5,6 +5,7 @@ import ProfileName from './cover/ProfileName';
 import Menu from './cover/Menu';
 import Button from './ui/Button';
 import { UserPlus2 } from 'lucide-react';
+import Link from 'next/link';
 
 interface CoverProps {}
 
@@ -18,9 +19,11 @@ const Cover: FC<CoverProps> = ({}) => {
                 <div className="flex flex-1 flex-col justify-center gap-4">
                     <div className="flex justify-between">
                         <ProfileName />
-                        <Button variant="primary" sizes={'small'}>
-                            <UserPlus2 /> Follow
-                        </Button>
+                        <Link href="https://instagram.com/ezSnippet">
+                            <Button variant="primary" sizes={'small'}>
+                                <UserPlus2 /> Follow
+                            </Button>
+                        </Link>
                     </div>
                     {/* <Menu /> */}
                 </div>
