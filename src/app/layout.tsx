@@ -18,7 +18,7 @@ export default function RootLayout({
             <body>
                 <div className="flex w-screen">
                     <SideBar />
-                    <main className="flex-1 m-5 pl-[300px]">
+                    <main className="flex-1 m-5 mt-0 pl-[300px]">
                         <Navbar />
                         {children}
                     </main>

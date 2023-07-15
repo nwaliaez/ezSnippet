@@ -8,6 +8,7 @@ module.exports = {
     theme: {
         extend: {
             backgroundColor: {
+                body: 'var(--bg-primary)',
                 cardPrimary: 'var(--card-primary)',
                 btnHighlight: 'var(--btn-highlight)',
             },

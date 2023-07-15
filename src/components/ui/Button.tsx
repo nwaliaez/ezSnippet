@@ -4,6 +4,7 @@ import { cn } from '../utils/utils';
 
 const buttonVariants = cva(
     [
+        'h-max',
         'w-max',
         'flex',
         'gap-2',

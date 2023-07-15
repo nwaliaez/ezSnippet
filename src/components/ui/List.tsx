@@ -30,7 +30,7 @@ const listVariants = cva(['flex', 'items-center'], {
         },
         sizes: {
             xs: ['text-xs', 'gap-1'],
-            small: ['text-sm', 'gap-4'],
+            small: ['text-sm', 'px-2', 'gap-4'],
             medium: ['text-sm', 'gap-4', 'p-4'],
         },
     },

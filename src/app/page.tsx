@@ -12,7 +12,7 @@ import {
 
 export default function Home() {
     return (
-        <div className="">
+        <div>
             <Cover />
             <div className="flex flex-col gap-10 px-20">
                 <Hero />

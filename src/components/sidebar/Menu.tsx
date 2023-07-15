@@ -18,7 +18,7 @@ const Menu: FC<MenuProps> = ({}) => {
     return (
         <div className="flex flex-col h-full p-5 bg-cardPrimary text-primary rounded-lg w-full">
             {/* List 1 */}
-            <List link="/home" effect="slideUp">
+            <List link="/" effect="slideUp">
                 <Home /> Home
             </List>
             <List link="/trending" effect="slideUp">

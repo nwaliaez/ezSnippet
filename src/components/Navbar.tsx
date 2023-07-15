@@ -7,7 +7,7 @@ interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
     return (
-        <nav className="flex m-5 mt-0 text-info justify-between">
+        <nav className="flex sticky top-0 z-20 bg-body p-5 text-info justify-between">
             <SearchBar />
             <div className="flex items-center gap-5">
                 <Button>
