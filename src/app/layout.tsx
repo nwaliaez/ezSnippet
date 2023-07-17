@@ -2,6 +2,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 import SideBar from '@/components/Sidebar';
 import Navbar from '@/components/Navbar';
+import ContactForm from '@/components/ContactForm';
+import ContactFormProvider from '@/components/ContactFormProvider';
 
 export const metadata: Metadata = {
     title: 'Ez Snippet',
@@ -16,13 +18,16 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
-                <div className="flex w-screen">
-                    <SideBar />
-                    <main className="flex-1 m-5 mt-0 pl-[300px]">
-                        <Navbar />
-                        {children}
-                    </main>
-                </div>
+                <ContactFormProvider>
+                    <ContactForm />
+                    <div className="flex w-screen">
+                        <SideBar />
+                        <main className="flex-1 m-5 mt-0 pl-[300px]">
+                            <Navbar />
+                            {children}
+                        </main>
+                    </div>
+                </ContactFormProvider>
             </body>
         </html>
     );

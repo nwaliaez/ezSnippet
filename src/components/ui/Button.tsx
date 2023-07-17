@@ -8,6 +8,7 @@ const buttonVariants = cva(
         'w-max',
         'flex',
         'gap-2',
+        'justify-center',
         'items-center',
         'rounded-md',
         'outline-0',
@@ -22,6 +23,7 @@ const buttonVariants = cva(
             },
             sizes: {
                 small: ['text-xs', 'py-2', 'px-4'],
+                medium: ['text-sm', 'font-bold', 'py-3', 'px-4'],
             },
         },
         defaultVariants: {
@@ -35,9 +37,18 @@ interface ButtonProps
     extends ButtonHTMLAttributes<HTMLButtonElement>,
         VariantProps<typeof buttonVariants> {}
 
-const Button: FC<ButtonProps> = ({ variant, sizes, className, children }) => {
+const Button: FC<ButtonProps> = ({
+    variant,
+    sizes,
+    className,
+    children,
+    ...props
+}) => {
     return (
-        <button className={cn(buttonVariants({ variant, sizes, className }))}>
+        <button
+            {...props}
+            className={cn(buttonVariants({ variant, sizes, className }))}
+        >
             {children}
         </button>
     );

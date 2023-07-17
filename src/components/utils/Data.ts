@@ -1,3 +1,38 @@
+export const projectCard = [
+    {
+        id: 1,
+        title: 'e-Commerce',
+        src: '/projects/amazon.png',
+        exp: '1 day ago',
+        snippetCount: 1128,
+        progress: 100,
+    },
+    {
+        id: 2,
+        title: 'Ethereum Lottery',
+        src: '/projects/eth.jpeg',
+        exp: '1 day ago',
+        snippetCount: 1128,
+        progress: 100,
+    },
+    {
+        id: 3,
+        title: 'File Sharing',
+        src: '/projects/fileSharing.jpeg',
+        exp: '1 day ago',
+        snippetCount: 1128,
+        progress: 100,
+    },
+    {
+        id: 4,
+        title: 'Dalle Clone',
+        src: '/projects/dalle.jpeg',
+        exp: '1 day ago',
+        snippetCount: 1128,
+        progress: 100,
+    },
+];
+
 export const frontendCard = [
     {
         id: 1,

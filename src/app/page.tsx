@@ -7,6 +7,7 @@ import {
     devopsCards,
     frontendCard,
     otherCards,
+    projectCard,
     web3Cards,
 } from '@/components/utils/Data';
 
@@ -16,6 +17,7 @@ export default function Home() {
             <Cover />
             <div className="flex flex-col gap-10 px-20">
                 <Hero />
+                <CardSection title="Projects" data={projectCard} />
                 <CardSection title="Frontend" data={frontendCard} />
                 <CardSection title="Backend" data={backendCard} />
                 <CardSection title="Database" data={databaseCard} />

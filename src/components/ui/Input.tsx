@@ -6,6 +6,13 @@ const inputVariants = cva(['w-full', 'outline-0'], {
     variants: {
         variant: {
             searchBar: ['bg-transparent', 'placeholder:text-info'],
+            border: [
+                'border',
+                'border-info',
+                'rounded-md',
+                'w-full',
+                'bg-transparent',
+            ],
         },
         sizes: {
             small: ['text-sm', 'py-1', 'px-2'],
@@ -30,11 +37,20 @@ const Input: FC<InputProps> = ({
     placeholder,
 }) => {
     return (
-        <input
-            type={type || 'text'}
-            placeholder={placeholder}
-            className={cn(inputVariants({ variant, sizes, className }))}
-        />
+        <>
+            {type && type == 'textarea' ? (
+                <textarea
+                    placeholder={placeholder}
+                    className={cn(inputVariants({ variant, sizes, className }))}
+                />
+            ) : (
+                <input
+                    type={type || 'text'}
+                    placeholder={placeholder}
+                    className={cn(inputVariants({ variant, sizes, className }))}
+                />
+            )}
+        </>
     );
 };
 
