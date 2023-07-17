@@ -7,6 +7,7 @@ import {
     Image as ImageIcon,
     Instagram,
     Layers,
+    Linkedin,
     Share2,
     ShoppingCart,
     Ticket,
@@ -53,6 +54,12 @@ const Menu: FC<MenuProps> = ({}) => {
                 effect="slideUp"
             >
                 <Layers color="#f77f00" /> Stack overflow
+            </List>
+            <List
+                link="https://stackoverflow.com/users/20331641/neeraj-walia"
+                effect="slideUp"
+            >
+                <Linkedin color="#0277b5" /> Linkedin
             </List>
 
             {/* List 3 */}
