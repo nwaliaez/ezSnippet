@@ -21,7 +21,7 @@ export default function RootLayout({
                 <MenuProvider>
                     <ContactFormProvider>
                         <ContactForm />
-                        <div className="flex w-screen">
+                        <div className="flex">
                             <SideBar />
                             <main className="flex-1 md:m-5 mt-0 pl-0 lg:pl-[300px]">
                                 <Navbar />

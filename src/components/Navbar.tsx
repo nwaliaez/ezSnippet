@@ -15,7 +15,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
             {/* <SearchBar /> */}
             <div>{/* Place holder for search bar */}</div>
             <div className="flex items-center gap-5">
-                <Button onClick={setFormVisibility}>
+                <Button disabled onClick={setFormVisibility}>
                     Contact Me <User size={18} />
                 </Button>
                 <button onClick={showMenuVisibility} type="button">
