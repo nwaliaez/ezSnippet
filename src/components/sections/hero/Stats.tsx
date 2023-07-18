@@ -6,7 +6,7 @@ interface StatsProps {}
 
 const Stats: FC<StatsProps> = ({}) => {
     return (
-        <div className="flex flex-col w-max px-4 gap-5 text-info">
+        <div className="hidden md:flex flex-col w-max px-4 gap-5 text-info">
             <List link="/instagram" sizes="xs" className="gap-4">
                 <User size={16} />
                 <span>

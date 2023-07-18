@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import SideBar from '@/components/Sidebar';
 import Navbar from '@/components/Navbar';
 import ContactForm from '@/components/ContactForm';
-import ContactFormProvider from '@/components/ContactFormProvider';
+import { ContactFormProvider, MenuProvider } from '@/components/Provider';
 
 export const metadata: Metadata = {
     title: 'Ez Snippet',
@@ -18,16 +18,18 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
-                <ContactFormProvider>
-                    <ContactForm />
-                    <div className="flex w-screen">
-                        <SideBar />
-                        <main className="flex-1 m-5 mt-0 pl-[300px]">
-                            <Navbar />
-                            {children}
-                        </main>
-                    </div>
-                </ContactFormProvider>
+                <MenuProvider>
+                    <ContactFormProvider>
+                        <ContactForm />
+                        <div className="flex w-screen">
+                            <SideBar />
+                            <main className="flex-1 md:m-5 mt-0 pl-0 lg:pl-[300px]">
+                                <Navbar />
+                                {children}
+                            </main>
+                        </div>
+                    </ContactFormProvider>
+                </MenuProvider>
             </body>
         </html>
     );

@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <div>
             <Cover />
-            <div className="flex flex-col gap-10 px-20">
+            <div className="flex flex-col gap-10 lg:px-10">
                 <Hero />
                 <CardSection title="Projects" data={projectCard} />
                 <CardSection title="Frontend" data={frontendCard} />

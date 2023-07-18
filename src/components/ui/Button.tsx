@@ -22,6 +22,7 @@ const buttonVariants = cva(
                 primary: ['bg-cardPrimary', 'text-primary', 'font-semibold'],
             },
             sizes: {
+                iconOnly: ['text-xs', 'p-2'],
                 small: ['text-xs', 'py-2', 'px-4'],
                 medium: ['text-sm', 'font-bold', 'py-3', 'px-4'],
             },

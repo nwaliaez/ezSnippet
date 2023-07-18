@@ -12,15 +12,25 @@ import {
     ShoppingCart,
     Ticket,
     Video,
+    X,
+    XCircle,
     Youtube,
 } from 'lucide-react';
 import List from '../ui/List';
+import { useMenu } from '../Provider';
 
 interface MenuProps {}
 
 const Menu: FC<MenuProps> = ({}) => {
+    const { showMenuVisibility } = useMenu();
     return (
-        <div className="flex flex-col h-full p-5 bg-cardPrimary text-primary rounded-lg w-full">
+        <div
+            className="flex relative flex-col h-full p-5 bg-cardPrimary text-primary rounded-lg w-full overflow-y-auto"
+            onClick={showMenuVisibility}
+        >
+            <div className="block lg:hidden p-5 z-10 text-primary absolute right-0 top-0 cursor-pointer text-2xl">
+                <X className={`text-primary`} />
+            </div>
             {/* List 1 */}
             <List link="/" effect="slideUp">
                 <Home /> Home
@@ -55,10 +65,7 @@ const Menu: FC<MenuProps> = ({}) => {
             >
                 <Layers color="#f77f00" /> Stack overflow
             </List>
-            <List
-                link="https://stackoverflow.com/users/20331641/neeraj-walia"
-                effect="slideUp"
-            >
+            <List link="https://www.linkedin.com/in/ezforme/" effect="slideUp">
                 <Linkedin color="#0277b5" /> Linkedin
             </List>
 

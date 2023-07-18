@@ -2,8 +2,8 @@
 import { FC, MouseEvent, useEffect, useRef } from 'react';
 import Label from './ContactForm/Label';
 import Button from './ui/Button';
-import { useContact } from './ContactFormProvider';
-import { XCircle } from 'lucide-react';
+import { useContact } from './Provider';
+import { X } from 'lucide-react';
 
 interface ContactFormProps {}
 
@@ -18,10 +18,10 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
         <>
             {showForm && (
                 <div
-                    className="h-screen bg-blur backdrop-filter backdrop-blur-sm bg-[rgba(0,0,0,0.9)] w-screen absolute z-40 flex items-center justify-center"
+                    className="h-screen bg-blur backdrop-filter backdrop-blur-sm bg-[rgba(0,0,0,0.9)] w-screen fixed z-40 flex items-center justify-center"
                     onClick={() => setFormVisibility()}
                 >
-                    <XCircle className="text-primary absolute right-5 top-5 cursor-pointer" />
+                    <X className="text-primary absolute right-5 top-5 cursor-pointer" />
                     <form
                         onClick={handleFormClick}
                         className="grid gap-5 w-96 p-5 bg-cardPrimary rounded-lg text-info shadow-lg relative"

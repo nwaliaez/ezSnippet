@@ -1,14 +1,22 @@
+'use client';
 import { FC } from 'react';
 import Logo from './sidebar/Logo';
 import Menu from './sidebar/Menu';
+import { useMenu } from './Provider';
 
 interface SideBarProps {}
 
 const SideBar: FC<SideBarProps> = ({}) => {
+    const { showMenu } = useMenu();
+    console.log(showMenu);
     return (
-        <aside className="flex h-screen fixed w-[300px]">
+        <aside
+            className={`${
+                showMenu ? 'flex' : 'hidden'
+            } lg:flex h-screen fixed w-screen sm:w-[300px] z-30`}
+        >
             {/* Sidebar Container */}
-            <div className="flex flex-col m-5 w-full">
+            <div className="toggle flex flex-col lg:m-5 w-full">
                 <Logo />
                 <Menu />
             </div>

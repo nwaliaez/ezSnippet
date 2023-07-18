@@ -34,7 +34,7 @@ const Card: FC<CardProps> = ({ title, snippetCount, exp, src, progress }) => {
 
             <div className="grid gap-2 px-2">
                 <div className="text-highlight font-bold">{title}</div>
-                <div className="flex gap-10">
+                <div className="flex gap-2 md:gap-10">
                     <List variant="info" link="/instagram" sizes="xs">
                         <Code size={16} />
                         {snippetCount.toLocaleString()}

@@ -6,15 +6,15 @@ interface IntroProps {}
 
 const Intro: FC<IntroProps> = ({}) => {
     return (
-        <div className="flex flex-1 gap-7">
+        <div className="flex flex-1 flex-col md:flex-row gap-7">
             <div className="flex flex-1">
                 <iframe
                     className="w-full aspect-video rounded-lg"
                     src="https://www.youtube.com/embed/BB2ETUKFV_k"
                 ></iframe>
             </div>
-            <div className="flex flex-col justify-between flex-1">
-                <div className="flex flex-col gap-4">
+            <div className="flex flex-col justify-between flex-1 p-5 md:p-0">
+                <div className="flex flex-col gap-4 ">
                     <div className="text-2xl text-highlight font-semibold">
                         Learning made EZ - An introduction
                     </div>
@@ -31,7 +31,7 @@ const Intro: FC<IntroProps> = ({}) => {
                         </List>
                     </div>
                 </div>
-                <div className="text-secondary text-sm max-w-[500px]">
+                <div className="text-secondary text-sm mt-2 md:mt-0  max-w-[500px]">
                     Join me, Neeraj Walia, aka EZ, on an exciting coding
                     journey! Together, we&apos;ll delve into a world of
                     knowledge, discover innovative ideas, embrace quick tips,
