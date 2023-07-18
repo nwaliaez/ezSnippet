@@ -45,7 +45,7 @@ interface ListProps extends VariantProps<typeof listVariants> {
     link?: string;
     children: ReactNode;
     className?: string;
-    target: "_blank" | "_self" | "_parent" | "_top";
+    target?: "_blank" | "_self" | "_parent" | "_top";
 }
 
 const List: FC<ListProps> = ({
