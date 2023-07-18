@@ -17,6 +17,7 @@ const Cover: FC<CoverProps> = ({}) => {
                         <ProfileName />
                         <Link
                             className="hidden md:block"
+                            target='_blank'
                             href="https://instagram.com/ezSnippet"
                         >
                             <Button variant="primary" sizes={'small'}>
