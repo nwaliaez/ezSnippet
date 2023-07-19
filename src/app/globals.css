@@ -41,3 +41,22 @@ body {
 .toggle-button:target + #toggle {
     display: flex;
 }
+
+.spinner {
+    color: var(--text-highlight);
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    overflow: visible;
+}
+.spinner > circle {
+    fill: none;
+    stroke: currentColor;
+    cx: 50%;
+    cy: 50%;
+    r: 50%;
+    stroke-width: 3px;
+    stroke-linecap: round;
+    transform-origin: center;
+}

@@ -23,6 +23,8 @@
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-hook-form": "^7.45.1",
+        "react-hot-toast": "^2.4.1",
+        "resend": "^0.17.1",
         "tailwind-merge": "^1.13.2",
         "tailwindcss": "3.3.2",
         "typescript": "5.1.6",

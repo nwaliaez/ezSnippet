@@ -1,5 +1,5 @@
 import { VariantProps, cva } from 'class-variance-authority';
-import { FC, InputHTMLAttributes } from 'react';
+import { ChangeEvent, FC, InputHTMLAttributes } from 'react';
 import { cn } from '../utils/utils';
 
 const inputVariants = cva(['w-full', 'outline-0'], {
@@ -26,25 +26,43 @@ const inputVariants = cva(['w-full', 'outline-0'], {
 });
 
 interface InputProps
-    extends InputHTMLAttributes<HTMLInputElement>,
+    extends InputHTMLAttributes<HTMLInputElement | HTMLTextAreaElement>,
         VariantProps<typeof inputVariants> {}
 
 const Input: FC<InputProps> = ({
     type,
     variant,
     sizes,
+    value,
     className,
+    onChange,
+    name,
     placeholder,
+    ...props
 }) => {
+    const handleChange = (
+        e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
+        if (onChange) {
+            onChange(e);
+        }
+    };
     return (
         <>
             {type && type == 'textarea' ? (
                 <textarea
+                    required
+                    onChange={handleChange}
+                    value={value}
+                    name={name}
                     placeholder={placeholder}
                     className={cn(inputVariants({ variant, sizes, className }))}
                 />
             ) : (
                 <input
+                    required
+                    name={name}
+                    onChange={onChange}
                     type={type || 'text'}
                     placeholder={placeholder}
                     className={cn(inputVariants({ variant, sizes, className }))}

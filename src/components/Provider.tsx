@@ -35,14 +35,14 @@ interface MenuProviderProps {
 
 const MenuContext = createContext({
     showMenu: false,
-    showMenuVisibility: () => {},
+    showMenuVisibility: (status: boolean) => {},
 });
 
 export const MenuProvider: FC<MenuProviderProps> = ({ children }) => {
     const [showMenu, setShowMenu] = useState(false);
-    const showMenuVisibility = () => {
-        setShowMenu(!showMenu);
-        !showMenu
+    const showMenuVisibility = (status: boolean) => {
+        setShowMenu(status);
+        showMenu
             ? (document.body.style.overflow = 'hidden')
             : (document.body.style.overflow = 'auto');
     };

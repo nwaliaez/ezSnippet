@@ -14,18 +14,12 @@ interface CardProps {
 const Card: FC<CardProps> = ({ title, snippetCount, exp, src, progress }) => {
     return (
         <div className="flex flex-col gap-3">
-            <div className="relative aspect-video">
-                <Image
-                    src={src}
-                    alt={title}
-                    fill
-                    className="object-cover rounded-lg"
-                />
+            <div className="relative aspect-video rounded-lg overflow-hidden">
+                <Image src={src} alt={title} fill className="object-cover" />
                 <div className="progress-bar">
                     <div
                         className="h-full bg-btnHighlight"
                         style={{
-                            borderRadius: '0 0 0 8px',
                             width: `${progress}%`,
                         }}
                     />

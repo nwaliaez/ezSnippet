@@ -4,6 +4,7 @@ import SideBar from '@/components/Sidebar';
 import Navbar from '@/components/Navbar';
 import ContactForm from '@/components/ContactForm';
 import { ContactFormProvider, MenuProvider } from '@/components/Provider';
+import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
     title: 'Ez Snippet',
@@ -21,9 +22,10 @@ export default function RootLayout({
                 <MenuProvider>
                     <ContactFormProvider>
                         <ContactForm />
+                        <Toaster />
                         <div className="flex">
                             <SideBar />
-                            <main className="flex-1 md:m-5 mt-0 pl-0 lg:pl-[300px]">
+                            <main className="flex-1 pl-0 lg:pl-[300px]">
                                 <Navbar />
                                 {children}
                             </main>

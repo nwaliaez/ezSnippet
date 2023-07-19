@@ -18,7 +18,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
                 <Button disabled onClick={setFormVisibility}>
                     Contact Me <User size={18} />
                 </Button>
-                <button onClick={showMenuVisibility} type="button">
+                <button onClick={() => showMenuVisibility(false)} type="button">
                     <Menu className="flex lg:hidden cursor-pointer hover:text-primary transition-colors" />
                 </button>
             </div>

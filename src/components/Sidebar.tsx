@@ -8,7 +8,6 @@ interface SideBarProps {}
 
 const SideBar: FC<SideBarProps> = ({}) => {
     const { showMenu } = useMenu();
-    console.log(showMenu);
     return (
         <aside
             className={`${
