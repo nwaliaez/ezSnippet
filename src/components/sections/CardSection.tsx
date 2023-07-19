@@ -1,16 +1,10 @@
 import { FC } from 'react';
 import Card from '../ui/Card';
+import { ISectionCardData } from '../utils/Data';
 
 interface CardSectionProps {
     title: string;
-    data: {
-        id: number;
-        title: string;
-        src: string;
-        exp: string;
-        snippetCount: number;
-        progress: number;
-    }[];
+    data: ISectionCardData[];
 }
 
 const CardSection: FC<CardSectionProps> = ({ title, data }) => {
@@ -20,7 +14,7 @@ const CardSection: FC<CardSectionProps> = ({ title, data }) => {
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl::grid-cols-5 gap-5">
                 {data.map((card) => (
                     <Card
-                        href=""
+                        href={card.href}
                         key={card.id}
                         title={card.title}
                         src={card.src}

@@ -15,7 +15,7 @@ export const projectCard: ISectionCardData[] = [
         exp: '1 day ago',
         snippetCount: 1128,
         progress: 100,
-        href: '/',
+        href: 'https://github.com/nwaliaez/eCommerce',
     },
     {
         id: 2,
@@ -24,6 +24,7 @@ export const projectCard: ISectionCardData[] = [
         exp: '1 day ago',
         snippetCount: 1128,
         progress: 100,
+        href: 'https://github.com/nwaliaez/HardhatLottery',
     },
     {
         id: 3,
@@ -32,6 +33,7 @@ export const projectCard: ISectionCardData[] = [
         exp: '1 day ago',
         snippetCount: 1128,
         progress: 100,
+        href: 'https://github.com/nwaliaez/filetransfer-webrtc',
     },
     {
         id: 4,
@@ -40,6 +42,7 @@ export const projectCard: ISectionCardData[] = [
         exp: '1 day ago',
         snippetCount: 1128,
         progress: 100,
+        href: 'https://github.com/nwaliaez/dalleClone',
     },
 ];
 

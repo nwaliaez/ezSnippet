@@ -15,6 +15,7 @@ const SideBar: FC<SideBarProps> = ({}) => {
             } lg:flex h-screen fixed w-screen sm:w-[300px] z-30`}
         >
             {/* Sidebar Container */}
+
             <div className="toggle flex flex-col lg:m-5 w-full">
                 <Logo />
                 <Menu />
