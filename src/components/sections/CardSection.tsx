@@ -20,6 +20,7 @@ const CardSection: FC<CardSectionProps> = ({ title, data }) => {
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl::grid-cols-5 gap-5">
                 {data.map((card) => (
                     <Card
+                        href=""
                         key={card.id}
                         title={card.title}
                         src={card.src}

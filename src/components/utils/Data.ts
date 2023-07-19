@@ -1,4 +1,13 @@
-export const projectCard = [
+export interface ISectionCardData {
+    id: number;
+    title: string;
+    src: string;
+    exp: string;
+    snippetCount: number;
+    progress: number;
+    href?: string;
+}
+export const projectCard: ISectionCardData[] = [
     {
         id: 1,
         title: 'e-Commerce',
@@ -6,6 +15,7 @@ export const projectCard = [
         exp: '1 day ago',
         snippetCount: 1128,
         progress: 100,
+        href: '/',
     },
     {
         id: 2,
@@ -33,7 +43,7 @@ export const projectCard = [
     },
 ];
 
-export const frontendCard = [
+export const frontendCard: ISectionCardData[] = [
     {
         id: 1,
         title: 'HTML, CSS',
@@ -76,7 +86,7 @@ export const frontendCard = [
     },
 ];
 
-export const backendCard = [
+export const backendCard: ISectionCardData[] = [
     {
         id: 1,
         title: 'NodeJs',
@@ -119,7 +129,7 @@ export const backendCard = [
     },
 ];
 
-export const databaseCard = [
+export const databaseCard: ISectionCardData[] = [
     {
         id: 1,
         title: 'MySQL',
@@ -162,7 +172,7 @@ export const databaseCard = [
     },
 ];
 
-export const devopsCards = [
+export const devopsCards: ISectionCardData[] = [
     {
         id: 1,
         title: 'Docker',
@@ -205,7 +215,7 @@ export const devopsCards = [
     },
 ];
 
-export const web3Cards = [
+export const web3Cards: ISectionCardData[] = [
     {
         id: 1,
         title: 'Solidity',
@@ -248,7 +258,7 @@ export const web3Cards = [
     },
 ];
 
-export const otherCards = [
+export const otherCards: ISectionCardData[] = [
     {
         id: 1,
         title: 'Rest API',

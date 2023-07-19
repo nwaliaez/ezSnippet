@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { FC } from 'react';
 import List from './List';
 import { Code, History } from 'lucide-react';
+import Link from 'next/link';
 
 interface CardProps {
     title: string;
@@ -9,9 +10,17 @@ interface CardProps {
     exp: string;
     src: string;
     progress: number;
+    href?: string;
 }
 
-const Card: FC<CardProps> = ({ title, snippetCount, exp, src, progress }) => {
+const Card: FC<CardProps> = ({
+    title,
+    snippetCount,
+    exp,
+    src,
+    progress,
+    href,
+}) => {
     return (
         <div className="flex flex-col gap-3">
             <div className="relative aspect-video rounded-lg overflow-hidden">
