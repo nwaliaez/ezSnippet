@@ -1,5 +1,12 @@
 'use client';
-import { FC, ReactNode, createContext, useContext, useState } from 'react';
+import {
+    FC,
+    ReactNode,
+    createContext,
+    useContext,
+    useEffect,
+    useState,
+} from 'react';
 
 interface ContactFormProviderProps {
     children: ReactNode;
@@ -40,11 +47,14 @@ const MenuContext = createContext({
 
 export const MenuProvider: FC<MenuProviderProps> = ({ children }) => {
     const [showMenu, setShowMenu] = useState(false);
-    const showMenuVisibility = (status: boolean) => {
-        setShowMenu(status);
+    useEffect(() => {
         showMenu
             ? (document.body.style.overflow = 'hidden')
             : (document.body.style.overflow = 'auto');
+    }, [showMenu]);
+
+    const showMenuVisibility = (status: boolean) => {
+        setShowMenu(status);
     };
     return (
         <MenuContext.Provider value={{ showMenu, showMenuVisibility }}>
