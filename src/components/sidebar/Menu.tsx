@@ -8,6 +8,7 @@ import {
     Instagram,
     Layers,
     Linkedin,
+    Scissors,
     Share2,
     ShoppingCart,
     Ticket,
@@ -111,6 +112,13 @@ const Menu: FC<MenuProps> = ({}) => {
                 effect="slideUp"
             >
                 <ImageIcon /> Dalle Clone
+            </List>
+            <List
+                target="_blank"
+                link="https://snake-nwaliaez.vercel.app/"
+                effect="slideUp"
+            >
+                <Scissors /> Ex Clone
             </List>
         </div>
     );

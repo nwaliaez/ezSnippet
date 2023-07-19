@@ -44,6 +44,15 @@ export const projectCard: ISectionCardData[] = [
         progress: 100,
         href: 'https://github.com/nwaliaez/dalleClone',
     },
+    {
+        id: 5,
+        title: 'Ex Clone',
+        src: '/projects/snake.webp',
+        exp: '1 day ago',
+        snippetCount: 1128,
+        progress: 100,
+        href: 'https://snake-nwaliaez.vercel.app/',
+    },
 ];
 
 export const frontendCard: ISectionCardData[] = [
