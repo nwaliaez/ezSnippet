@@ -10,6 +10,15 @@ export interface ISectionCardData {
 export const projectCard: ISectionCardData[] = [
     {
         id: 1,
+        title: 'Ez Clothing',
+        src: '/projects/ezClothing.jpeg',
+        exp: '1 day ago',
+        snippetCount: 1128,
+        progress: 100,
+        href: 'https://github.com/nwaliaez/ezClothing',
+    },
+    {
+        id: 2,
         title: 'e-Commerce',
         src: '/projects/amazon.png',
         exp: '1 day ago',
@@ -18,7 +27,7 @@ export const projectCard: ISectionCardData[] = [
         href: 'https://github.com/nwaliaez/eCommerce',
     },
     {
-        id: 2,
+        id: 3,
         title: 'Ethereum Lottery',
         src: '/projects/eth.jpeg',
         exp: '1 day ago',
@@ -27,7 +36,7 @@ export const projectCard: ISectionCardData[] = [
         href: 'https://github.com/nwaliaez/HardhatLottery',
     },
     {
-        id: 3,
+        id: 4,
         title: 'File Sharing',
         src: '/projects/fileSharing.jpeg',
         exp: '1 day ago',
@@ -36,7 +45,7 @@ export const projectCard: ISectionCardData[] = [
         href: 'https://github.com/nwaliaez/filetransfer-webrtc',
     },
     {
-        id: 4,
+        id: 5,
         title: 'Dalle Clone',
         src: '/projects/dalle.jpeg',
         exp: '1 day ago',
@@ -45,7 +54,7 @@ export const projectCard: ISectionCardData[] = [
         href: 'https://github.com/nwaliaez/dalleClone',
     },
     {
-        id: 5,
+        id: 6,
         title: 'Ex Clone',
         src: '/projects/snake.webp',
         exp: '1 day ago',

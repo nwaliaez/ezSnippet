@@ -10,6 +10,7 @@ import {
     Linkedin,
     Scissors,
     Share2,
+    Shirt,
     ShoppingCart,
     Ticket,
     Video,
@@ -85,6 +86,13 @@ const Menu: FC<MenuProps> = ({}) => {
 
             {/* List 3 */}
             <div className="mt-5">Projects</div>
+            <List
+                target="_blank"
+                link="https://github.com/nwaliaez/ezClothing"
+                effect="slideUp"
+            >
+                <Shirt /> Ez CLothing
+            </List>
             <List
                 target="_blank"
                 link="https://github.com/nwaliaez/eCommerce"
