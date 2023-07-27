@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    color-scheme: dark;
+  }
+
 :root {
     /* Background */
     --bg-primary: #14131a;
