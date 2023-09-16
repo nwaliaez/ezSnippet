@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    color-scheme: dark;
+}
 :root {
     /* Background */
     --bg-primary: #14131a;
@@ -59,4 +62,30 @@ body {
     stroke-width: 3px;
     stroke-linecap: round;
     transform-origin: center;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+/* Define the scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background: transparent; /* Background color of the track */
+}
+
+/* Define the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: hsla(0, 0%, 0%, 0.4); /* Background color of the thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+/* Define the scrollbar thumb when hovered over */
+::-webkit-scrollbar-thumb:hover {
+    background: hsla(
+        0,
+        0%,
+        0%,
+        0.5
+    ); /* Background color of the thumb when hovered */
 }
