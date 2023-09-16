@@ -17,7 +17,7 @@ export default function Home() {
         <div>
             <Cover />
             <div className="flex flex-col gap-10 lg:px-10">
-                <Hero />
+                {/* <Hero /> */}
                 <ProjectCardSection title="Projects" data={projectCard} />
                 <CardSection title="Frontend" data={frontendCard} />
                 <CardSection title="Backend" data={backendCard} />

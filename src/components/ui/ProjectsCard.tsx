@@ -1,7 +1,5 @@
-import Image from 'next/image';
 import { FC } from 'react';
-import List from './List';
-import { Code, History, LucideIcon } from 'lucide-react';
+import { LucideIcon } from 'lucide-react';
 import Link from 'next/link';
 
 interface ProjectsCardProps {
