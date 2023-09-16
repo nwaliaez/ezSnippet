@@ -1,3 +1,14 @@
+import {
+    Gamepad2,
+    Headphones,
+    Image,
+    LucideIcon,
+    Share2,
+    Shirt,
+    ShoppingCart,
+    Ticket,
+} from 'lucide-react';
+
 export interface ISectionCardData {
     id: number;
     title: string;
@@ -7,59 +18,74 @@ export interface ISectionCardData {
     progress: number;
     href?: string;
 }
-export const projectCard: ISectionCardData[] = [
+
+export interface IProjectSectionCardData {
+    id: number;
+    Icon: LucideIcon;
+    title: string;
+    bgColor: string;
+    techStack: string;
+    href?: string;
+}
+
+export const projectCard: IProjectSectionCardData[] = [
     {
         id: 1,
-        title: 'Ez Clothing',
-        src: '/projects/ezClothing.jpeg',
-        exp: '1 day ago',
-        snippetCount: 1128,
-        progress: 100,
-        href: 'https://github.com/nwaliaez/ezClothing',
-    },
-    {
-        id: 2,
-        title: 'e-Commerce',
-        src: '/projects/amazon.png',
-        exp: '1 day ago',
-        snippetCount: 1128,
-        progress: 100,
-        href: 'https://github.com/nwaliaez/eCommerce',
-    },
-    {
-        id: 3,
-        title: 'Ethereum Lottery',
-        src: '/projects/eth.jpeg',
-        exp: '1 day ago',
-        snippetCount: 1128,
-        progress: 100,
+        title: 'Spotify Clone',
+        techStack:
+            'Next.js 13, React Hook Form, Zustand, Radix UI, Typescript, Tailwind CSS',
+        Icon: Headphones,
+        bgColor: '#264653',
         href: 'https://github.com/nwaliaez/HardhatLottery',
     },
     {
+        id: 2,
+        title: 'Ez Clothing',
+        techStack:
+            'Next.js 13, Drizzle, PostGreSql, Docker, React Hook Form, ShadCn, , Typescript, Tailwind CSS',
+        Icon: Shirt,
+        bgColor: '#2a9d8f',
+        href: 'https://github.com/nwaliaez/ezClothing',
+    },
+    {
+        id: 3,
+        title: 'e-Commerce',
+        techStack:
+            'NodeJs, Express, Mongoose, Next.js 13, Next Auth, React Hook Form, Typescript, Tailwind CSS',
+        Icon: ShoppingCart,
+        bgColor: '#e9c46a',
+        href: 'https://github.com/nwaliaez/eCommerce',
+    },
+    {
         id: 4,
-        title: 'File Sharing',
-        src: '/projects/fileSharing.jpeg',
-        exp: '1 day ago',
-        snippetCount: 1128,
-        progress: 100,
-        href: 'https://github.com/nwaliaez/filetransfer-webrtc',
+        title: 'Ethereum Lottery',
+        techStack: 'Solidity, Ethers, Hardhat, Chai',
+        Icon: Ticket,
+        bgColor: '#ff2c55',
+        href: 'https://github.com/nwaliaez/HardhatLottery',
     },
     {
         id: 5,
-        title: 'Dalle Clone',
-        src: '/projects/dalle.jpeg',
-        exp: '1 day ago',
-        snippetCount: 1128,
-        progress: 100,
-        href: 'https://github.com/nwaliaez/dalleClone',
+        title: 'File Sharing',
+        techStack: 'Node js, Express, Web Sockets, Web RTC, React',
+        Icon: Share2,
+        bgColor: '#e76f51',
+        href: 'https://github.com/nwaliaez/filetransfer-webrtc',
     },
     {
         id: 6,
-        title: 'Ex Clone',
-        src: '/projects/snake.webp',
-        exp: '1 day ago',
-        snippetCount: 1128,
-        progress: 100,
+        title: 'Dalle Clone',
+        techStack: 'OpenAI, Nodejs, Express, Mongoose, ReactJS, Tailwind CSS',
+        Icon: Image,
+        bgColor: '#933e05',
+        href: 'https://github.com/nwaliaez/dalleClone',
+    },
+    {
+        id: 7,
+        title: 'Snake Game Clone',
+        techStack: 'Next.js 13, Tailwind CSS, Typescript',
+        Icon: Gamepad2,
+        bgColor: '#353535',
         href: 'https://snake-nwaliaez.vercel.app/',
     },
 ];

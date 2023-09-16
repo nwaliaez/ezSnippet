@@ -4,10 +4,11 @@ import { ISectionCardData } from '../utils/Data';
 
 interface CardSectionProps {
     title: string;
+    version?: string;
     data: ISectionCardData[];
 }
 
-const CardSection: FC<CardSectionProps> = ({ title, data }) => {
+const CardSection: FC<CardSectionProps> = ({ title, version, data }) => {
     return (
         <section className="grid gap-5 p-5 md:p-0">
             <div className="text-xl font-bold text-highlight">{title}</div>

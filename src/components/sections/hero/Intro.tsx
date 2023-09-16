@@ -10,7 +10,7 @@ const Intro: FC<IntroProps> = ({}) => {
             <div className="flex flex-1">
                 <iframe
                     className="w-full aspect-video rounded-lg"
-                    src="https://www.youtube.com/embed/BB2ETUKFV_k"
+                    src="https://www.youtube.com/embed/BB2ETUKFV_k?rel=0"
                 ></iframe>
             </div>
             <div className="flex flex-col justify-between flex-1 p-5 md:p-0">

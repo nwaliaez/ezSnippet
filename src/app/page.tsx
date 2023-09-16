@@ -1,6 +1,7 @@
 import Cover from '@/components/Cover';
 import CardSection from '@/components/sections/CardSection';
 import Hero from '@/components/sections/Hero';
+import ProjectCardSection from '@/components/sections/ProjectCardSection';
 import {
     backendCard,
     databaseCard,
@@ -17,7 +18,7 @@ export default function Home() {
             <Cover />
             <div className="flex flex-col gap-10 lg:px-10">
                 <Hero />
-                <CardSection title="Projects" data={projectCard} />
+                <ProjectCardSection title="Projects" data={projectCard} />
                 <CardSection title="Frontend" data={frontendCard} />
                 <CardSection title="Backend" data={backendCard} />
                 <CardSection title="Database" data={databaseCard} />
