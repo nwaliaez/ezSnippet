@@ -5,6 +5,7 @@
 html {
     color-scheme: dark;
 }
+
 :root {
     /* Background */
     --bg-primary: #14131a;
@@ -22,10 +23,10 @@ html {
     --text-highlight: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
     }
-}
+} */
 
 body {
     color: var(--foreground-rgb);
