@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 interface ProjectsCardProps {
   title: string;
-  src: string;
+  src?: string;
   href?: string;
   techStack: string;
 }
