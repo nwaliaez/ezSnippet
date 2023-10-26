@@ -29,7 +29,7 @@ const TechStack: FC<TechStackProps> = ({}) => {
           tech={['Node Js', 'Express Js', 'BUN Js', 'Elysia', 'Next Auth']}
         />
         <TechCard
-          title="Databse"
+          title="Database"
           classaName="bg-[#e0558a]"
           tech={['MySql', 'MongoDB', 'PostgreSQL', 'Redis', 'Elastic Search']}
         />
