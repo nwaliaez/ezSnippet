@@ -34,7 +34,7 @@ export const projectCard: IProjectSectionCardData[] = [
     title: 'Discord Clone',
     techStack: 'Next.js 13, React Hook Form, Zustand, Shadcn, Typescript',
     imageUrl: 'discord-clone.jpeg',
-    href: 'https://github.com/nwaliaez/HardhatLottery',
+    href: 'https://github.com/nwaliaez/discord-clone',
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ export const projectCard: IProjectSectionCardData[] = [
     techStack:
       'Next.js 13, React Hook Form, Zustand, Radix UI, Typescript, Tailwind CSS',
     imageUrl: 'spotify-clone.gif',
-    href: 'https://github.com/nwaliaez/HardhatLottery',
+    href: 'https://github.com/nwaliaez/spotify-clone',
   },
   {
     id: 3,
@@ -54,7 +54,7 @@ export const projectCard: IProjectSectionCardData[] = [
   },
   {
     id: 4,
-    title: 'Dalle Clone',
+    title: ' DALL·E Clone',
     techStack: 'OpenAI, Nodejs, Express, Mongoose, ReactJS, Tailwind CSS',
     imageUrl: 'dalle-clone.webp',
     href: 'https://github.com/nwaliaez/dalleClone',
@@ -65,7 +65,7 @@ export const moreProjects = [
   {
     id: 1,
     title: 'Ez Clothing',
-    techStack: 'Next.js 13, Drizzle, PostGreSql, Docker, ShadCn',
+    techStack: 'Next.js 13, Drizzle, PostgreSql, Docker, ShadCn',
     icon: 'shirt',
     href: 'https://github.com/nwaliaez/ezClothing',
   },
@@ -79,7 +79,7 @@ export const moreProjects = [
   {
     id: 3,
     title: 'File Sharing App',
-    techStack: 'Node js, Express, Web Sockets, Web RTC, React',
+    techStack: 'Node js, Express, Web Sockets, WebRTC, ReactJs',
     icon: 'share',
     href: 'https://github.com/nwaliaez/filetransfer-webrtc',
   },
