@@ -10,13 +10,13 @@ const Stats: FC<StatsProps> = ({}) => {
             <List link="/instagram" sizes="xs" className="gap-4">
                 <User size={16} />
                 <span>
-                    <b className="text-secondary">106k</b> Followers
+                    <b className="text-secondary">800k+</b> Followers
                 </span>
             </List>
             <List link="/instagram" sizes="xs" className="gap-4">
                 <Video size={16} />
                 <span>
-                    <b className="text-secondary">102</b> Videos
+                    <b className="text-secondary">500+</b> Videos
                 </span>
             </List>
             <List link="/instagram" sizes="xs" className="gap-4">
