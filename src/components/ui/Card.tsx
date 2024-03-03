@@ -23,7 +23,7 @@ const Card: FC<CardProps> = ({
 }) => {
     return (
         <div className="flex flex-col gap-3">
-            <Link target="_blank" href={href || '/'}>
+            <Link id='card' target="_blank" href={href || '/'}>
                 <div className="relative aspect-video rounded-lg overflow-hidden">
                     <Image
                         src={src}

@@ -90,3 +90,63 @@ body {
         0.5
     ); /* Background color of the thumb when hovered */
 }
+
+/* Scale Of Single Tech Item In What I Know */
+#singleTech
+{
+    transition: 0.2s ease-in-out;/* Transition For Smooth Effect*/
+}
+/* On Hover Tech Stack Item (i.e HTML, CSS, Tailwind)  Will Be Scale Up To 1.2  */
+#singleTech:hover
+{
+    scale: 1.2;
+}
+
+/* Effect On Instagram Link On Cover */
+#instagramCoverLink
+{
+    border: none;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+}
+#instagramCoverLink::after
+{
+    position: absolute;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%
+}
+#instagramCoverLink:hover::after{
+    transform: translate(0, 0);
+}
+#instagramCoverLink:hover
+{
+    border: none;
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+/*All Kind Card Will Scale To 1.05 On Hover*/
+#card{
+    transition: 0.3s ease-in-out;
+}
+#card:hover{
+    scale: 1.05;
+}
+

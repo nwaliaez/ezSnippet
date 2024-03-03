@@ -22,7 +22,6 @@ export default function Home() {
         {/* <Hero /> */}
         <ProjectCardSection title="Projects" data={projectCard} />
         <MoreProjects title="More projects" data={moreProjects} />
-
         <CardSection title="Web3" data={web3Cards} />
         <CardSection title="Others" data={otherCards} />
       </div>

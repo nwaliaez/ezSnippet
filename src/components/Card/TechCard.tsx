@@ -17,7 +17,7 @@ const TechCard: FC<TechCardProps> = ({ title, classaName, tech }) => {
       </div>
       <div className="flex flex-wrap gap-2">
         {tech.map((item, i) => (
-          <div
+          <div id='singleTech' 
             key={i}
             className={cn(
               'rounded-md bg-body text-xs text-primary p-2',
@@ -39,7 +39,7 @@ const TechCard: FC<TechCardProps> = ({ title, classaName, tech }) => {
               item === 'AWS' && 'border border-yellow-500/60'
             )}
           >
-            {item}
+            <p className='singleTech'>{item}</p>
           </div>
         ))}
       </div>
