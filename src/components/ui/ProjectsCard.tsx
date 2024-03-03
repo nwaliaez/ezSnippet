@@ -17,7 +17,7 @@ const ProjectsCard: FC<ProjectsCardProps> = ({
   techStack,
 }) => {
   return (
-    <Link target="_blank" href={href || '/'}>
+    <Link id='card' target="_blank" href={href || '/'}>
       <div className="flex flex-col overflow-hidden gap-3 bg-white text-zinc-800 rounded-lg overflow-ellipsis">
         <Image
           src={`/projects/${src}`}
